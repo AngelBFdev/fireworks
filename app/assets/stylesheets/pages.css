@@ -1,0 +1,22 @@
+html, body{
+  margin: 0;
+}
+
+.fireworks-area {
+  align-items: center;
+  background: black;
+  display: flex;
+  justify-content: center;
+  min-height: 100vh;
+  position: relative;
+}
+
+.fireworks-area canvas {
+  inset: 0;
+  pointer-events: none;
+  position: absolute;
+}
+
+h1 {
+  color: white;
+}
