@@ -1,4 +1,5 @@
 import { Controller } from "@hotwired/stimulus"
+import Explosion from "lib/explosion"
 
 export default class extends Controller {
   static targets = ["canvas"]
@@ -6,10 +7,9 @@ export default class extends Controller {
   connect(){
     this.explosions = []
     this.ctx = this.canvasTarget.getContext("2d")
-    console.log("Connected")
   }
 
   explode(event){
-    console.log("Boom")
+    this.explosions.push(new Explosion(event.clientX, event.clientY))
   }
 }

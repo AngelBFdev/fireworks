@@ -1,0 +1,12 @@
+{
+  "devDependencies": {
+    "jsdom": "^28.1.0",
+    "vitest": "^4.0.18"
+  },
+  "scripts": {
+    "test:js": "vitest"
+  },
+  "dependencies": {
+    "@hotwired/stimulus": "^3.2.2"
+  }
+}
