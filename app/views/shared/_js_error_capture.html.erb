@@ -1,0 +1,9 @@
+<script>
+  window.__jsErrors = [];
+
+  const originalConsoleError = console.error;
+  console.error = (...args) => {
+    window.__jsErrors.push(args.join(" "));
+    originalConsoleError.apply(console, args);
+  };
+</script>
