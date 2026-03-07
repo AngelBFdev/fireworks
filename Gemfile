@@ -66,4 +66,4 @@ group :test do
   gem "cuprite"
 end
 
-gem "rubocop", "~> 1.84", group: :development, require: false
+gem "rubocop", "~> 1.85", group: :development, require: false
